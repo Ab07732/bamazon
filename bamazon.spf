@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>root@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkfICEoLDA0OFUkbnVs
+			bNMJCgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+A
+			AoADgASjERITgAWABoAKgA5UdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			HB6hG4AHoR2ACIAJUTEJ0iIjJCVaJGNsYXNzbmFtZVgkY2xhc3Nl
+			c18QE05TTXV0YWJsZURpY3Rpb25hcnmjJCYnXE5TRGljdGlvbmFy
+			eVhOU09iamVjdNIKCykroSqAC4AN0gstLi9ZTlMuc3RyaW5ngAxc
+			RGVwYXJ0bWVudElk0iIjMTJfEA9OU011dGFibGVTdHJpbmejMTMn
+			WE5TU3RyaW5n0iIjNTZeTlNNdXRhYmxlQXJyYXmjNTcnV05TQXJy
+			YXnSIiMmOaImJ18QD05TS2V5ZWRBcmNoaXZlctE8PVRkYXRhgAEA
+			CAARABoAIwAtADIANwBJAE8AVgBeAGkAcAB0AHYAeAB6AH4AgACC
+			AIQAhgCLAJAAlQC+AMUAxwDJAMsAzQDPANEA0gDXAOIA6wEBAQUB
+			EgEbASABIgEkASYBKwE1ATcBRAFJAVsBXwFoAW0BfAGAAYgBjQGQ
+			AaIBpQGqAAAAAAAAAgEAAAAAAAAAPgAAAAAAAAAAAAAAAAAAAaw=
+			</data>
+			<key>contentSortCol</key>
+			<string>DepartmentName</string>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {770, 446}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>USE bamazon;
+
+CREATE table Products (
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+12345,
+'Duvet Cover',
+'Home',
+89.99,
+25);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+67891,
+'Mens Zip-up Hoodie',
+'Mens Clothing',
+29.99,
+25);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+23456,
+'Glass Catch-all Dish',
+'Home',
+15.99,
+10);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+78912,
+'Record Player',
+'Electronics',
+110.99,
+8);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+34567,
+'High Rise Skinny Jeans - Black',
+'Womens Clothing',
+59.99,
+30);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+89123,
+'Womens Bruce Springsteen Baseball T-shirt',
+'Womens Clothing',
+25.99,
+8);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+45678,
+'Mens Knit Beanie - Blue',
+'Mens Clothing',
+21.99,
+15);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+91234,
+'Striped Jersey Cotton Sheets - Queen',
+'Home',
+49.99,
+10);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+56789,
+'Spiked Dog Leash',
+'Pets',
+25.99,
+10);
+
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+11234,
+'Shark Kitty Bed',
+'Pets',
+59.99,
+5);
+
+USE bamazon;
+CREATE TABLE Departments(
+DepartmentId int AUTO_INCREMENT,
+PRIMARY KEY(DepartmentId),
+DepartmentName varchar(50) NOT NULL,
+OverHeadCosts DECIMAL(11,2) NOT NULL,
+TotalSales DECIMAL(11,2) NOT NULL);
+
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Mens Clothing',
+10000,
+0);
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Pets',
+10000,
+0);
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Home',
+20000,
+0);
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Shoes',
+15000,
+0);
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Electronics',
+50000,
+0);
+
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Womens Clothing',
+25000,
+0);
+
+
+</string>
+			<key>table</key>
+			<string>Departments</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>USE bamazon;
+CREATE table Products (
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+12345,
+'Duvet Cover',
+'Home',
+89.99,
+25);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+67891,
+'Mens Zip-up Hoodie',
+'Mens Clothing',
+29.99,
+25);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+23456,
+'Glass Catch-all Dish',
+'Home',
+15.99,
+10);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+78912,
+'Record Player',
+'Electronics',
+110.99,
+8);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+34567,
+'High Rise Skinny Jeans - Black',
+'Womens Clothing',
+59.99,
+30);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+89123,
+'Womens Bruce Springsteen Baseball T-shirt',
+'Womens Clothing',
+25.99,
+8);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+45678,
+'Mens Knit Beanie - Blue',
+'Mens Clothing',
+21.99,
+15);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+91234,
+'Striped Jersey Cotton Sheets - Queen',
+'Home',
+49.99,
+10);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+56789,
+'Spiked Dog Leash',
+'Pets',
+25.99,
+10);
+INSERT INTO Products (ItemID, ProductName, DepartmentName, Price, StockQuantity) VALUES (
+11234,
+'Shark Kitty Bed',
+'Pets',
+59.99,
+5);
+USE bamazon;
+CREATE TABLE Departments(
+DepartmentId int AUTO_INCREMENT,
+PRIMARY KEY(DepartmentId),
+DepartmentName varchar(50) NOT NULL,
+OverHeadCosts DECIMAL(11,2) NOT NULL,
+TotalSales DECIMAL(11,2) NOT NULL);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Mens Clothing',
+10000,
+0);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Pets',
+10000,
+0);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Home',
+20000,
+0);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Shoes',
+15000,
+0);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Electronics',
+50000,
+0);
+INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Womens Clothing',
+25000,
+0)</string>
+		<string>CREATE table Products (
+ItemID INT NOT NULL,
+ProductName varchar(50)NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>CREATE table Products (
+ItemID INT NOT NULL,
+ProductName varchar(50)  NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>CREATE table Products (
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>USE bamazon</string>
+		<string>use database bamazon</string>
+		<string>use database bamazon
+CREATE table products(
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>CREATE table products(
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>use table products(
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>INSERT INTO Departments (DepartmentName, OverHeadCosts, TotalSales) VALUES (
+'Womens Clothing',
+25000,
+0)</string>
+		<string>create table products(
+ItemID INT NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity INT NOT NULL,
+)</string>
+		<string>)</string>
+		<string>create table products(
+ItemID int NOT NULL,
+ProductName varchar(50) NOT NULL,
+DepartmentName varchar(50) NOT NULL,
+Price DECIMAL(4,2) NOT NULL,	
+StockQuantity int NOT NULL,
+)</string>
+		<string>create table products</string>
+		<string>create database bamazon
+create table products</string>
+		<string>create database bamazon</string>
+		<string>create database todolist</string>
+		<string>create Database sequelize_library</string>
+		<string>CREATE DATABASE `sequelize_chirpy`</string>
+		<string>use `chirpy`
+Create Table chirps (
+id int not null 
+plan varchar(100) ,
+INSERT INTO `id`
+PRIMARY KEY (id)
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.20</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
